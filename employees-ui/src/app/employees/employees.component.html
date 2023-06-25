@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Employees</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.firstName}}</td>
+        <td>{{employee.lastName}}</td>
+        <td>{{employee.email}}</td>
+        <td>
+          <button [routerLink]="['/employee', employee.id]" class="button" role="button">Edit</button>
+          <button (click)="deleteEmployee(employee.id)" class="btn btn-danger">x</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

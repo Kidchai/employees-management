@@ -2,3 +2,28 @@ h1 {
     margin-top: 20px;
     margin-bottom: 35px;
 }
+
+.add-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    line-height: 24px;
+  }
+
+.delete-button {
+    background-color: #FFEBEE;
+    color: #B71C1C;
+  }
+  
+  .delete-button:hover {
+    background-color: #FFCDD2;
+  }
+  
+  .delete-button:active {
+    background-color: #EF9A9A;
+  }
+  
+  .delete-button:disabled {
+    background-color: #FFEBEE;
+    color: #B0BEC5;
+  }
+  

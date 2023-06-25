@@ -1,6 +1,6 @@
 <div class="container">
   <h1>Employees</h1>
-  <button routerLink="/employee" class="button" role="button">Add new employee</button>
+  <button routerLink="/employee" class="button add-button" role="button">Add new employee</button>
   <table class="table">
     <thead>
       <tr>
@@ -17,7 +17,7 @@
         <td>{{employee.email}}</td>
         <td>
           <button [routerLink]="['/employee', employee.id]" class="button" role="button">Edit</button>
-          <button (click)="deleteEmployee(employee.id)" class="btn btn-danger">x</button>
+          <button (click)="deleteEmployee(employee.id)" class="button delete-button" role="button">Delete</button>
         </td>
       </tr>
     </tbody>

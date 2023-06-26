@@ -19,3 +19,7 @@ The main functionalities of this application include:
 **Database:** MySQL.
 
 **Server:** Tomcat (Embedded in Spring Boot).
+
+## Demonstration
+
+![gif file with demonstration of UI](assets/demo.gif)
